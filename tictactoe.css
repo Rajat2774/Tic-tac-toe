@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #0d0221;
+  background-color: #c2e7d9;
+  text-align: center;
+}
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+  font-size: 8vmin;
+  background-color: #0f0a0a;
+}
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #0d0221;
+  color: #a6cfd5;
+  border-radius: 1rem;
+  border: none;
+}
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #0d0221;
+  color: #a6cfd5;
+  border-radius: 1rem;
+  border: none;
+}
+#msg {
+  color: #26408b;
+  font-size: 5vmin;
+}
+.msg-container {
+  height: 80vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hide {
+  display: none;
+}
+/* CSS for Tic Tac Toe Game Heading */
+#head {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #03045e, #023e8a);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 10px;
+  border: 2px solid #03045e;
+  border-radius: 10px;
+  display: inline-block;
+  animation: glow 1s infinite alternate;
+}
+
+/* Glowing Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #03045e;
+  }
+  100% {
+    box-shadow: 0 0 20px #023e8a;
+  }
+}
